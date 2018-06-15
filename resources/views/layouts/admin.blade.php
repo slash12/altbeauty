@@ -411,6 +411,10 @@
         }); 
     </script>
 
+<footer class="footer">
+    <div class="container">
+      <span class="text-muted">Copyright &#169; Astek 2018</span>
+    </div>
+  </footer>
 </body>
-
 </html>

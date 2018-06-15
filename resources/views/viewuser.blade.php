@@ -5,14 +5,14 @@
 <link rel="stylesheet" href="{{asset('css/responsive.bootstrap.min.css')}}">
 
 
-<div class="row">
+{{-- <div class="row">
     <div class="col-lg-12">
-        <h1 class="page-header">View Users</h1>
+        <h1 class="page-header text-center">View Users</h1>
     </div>
     <!-- /.col-lg-12 -->
-</div>
+</div> --}}
 
-<table id="tlbuser" style="width:100%" class="table">
+<table id="tlbuser" style="width:100%" class="table table-striped">
     <thead>
         <tr>
             <th>
@@ -36,7 +36,7 @@
                 {{$user->lastname}}
             </td>
             <td>
-                <a href="/users/show/{{$user->id}}" class="btn btn-primary">Show</a> |
+                <a href="/users/show/{{$user->id}}" class="btn btn-primary">Show</a> &nbsp;|&nbsp;
                 <button class="btn btn-info"  data-userid={{$user->id}} data-toggle="modal" data-mycontactnum="{{$user->contactnum}}" data-mylastname="{{$user->lastname}}"data-myemail="{{$user->email}}" data-target="#edit">Edit</button>
                 &nbsp;|&nbsp;
                 <button class="btn btn-danger" data-userid={{$user->id}} data-toggle="modal" data-target="#delete"> Delete</button>
