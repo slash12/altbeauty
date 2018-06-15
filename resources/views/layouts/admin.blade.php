@@ -11,7 +11,8 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>Admin</title>
-    
+
+    <link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Bitter|Kaushan+Script">    
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
 
@@ -20,6 +21,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{asset('css/sb-admin-2.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/main.css')}}">
     
     <!-- Morris Charts CSS -->
     <link rel="stylesheet" href="{{asset('css/morris.css')}}">
@@ -39,7 +41,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">SB Admin v2.0</a>
+            <a class="navbar-brand" href="index.html"><span><img src="{{asset('images/astek.png')}}">  ALT</span> <small>Astek Life Team</small></a>
             </div>
             <!-- /.navbar-header -->
 
@@ -256,7 +258,7 @@
             <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
-                        <li class="sidebar-search">
+                        {{-- <li class="sidebar-search">
                             <div class="input-group custom-search-form">
                                 <input type="text" class="form-control" placeholder="Search...">
                                 <span class="input-group-btn">
@@ -266,7 +268,7 @@
                             </span>
                             </div>
                             <!-- /input-group -->
-                        </li>
+                        </li> --}}
                         <li>
                             <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
@@ -396,6 +398,18 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="{{asset('js/sb-admin-2.min.js')}}"></script>
+
+    <script src="{{asset('js/jquery.dataTables.min.js')}}"></script>
+    <script src="{{asset('js/dataTables.bootstrap.min.js')}}"></script>
+    <script src="{{asset('js/dataTables.responsive.min.js')}}"></script>
+    <script src="{{asset('js/responsive.bootstrap.min.js')}}"></script>
+
+    <script type="text/javascript">
+        $('#tlbuser').DataTable({
+        responsive: true,
+        "pageLength": 3
+        }); 
+    </script>
 
 </body>
 

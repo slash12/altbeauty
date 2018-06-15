@@ -1,0 +1,41 @@
+nav.navbar.navbar-default.navbar-static-top 
+{
+    background-color: #000 !important;
+}
+
+.nav>li>a, div#wrapper
+{
+    background-color: #212121 !important;
+}
+
+div#page-wrapper
+{
+    background-color: #eceff1 !important;
+}
+
+a 
+{
+    color: #00A45B;
+}
+
+a.navbar-brand span
+{
+    font-family: 'Bitter';
+    color:oldlace;
+    font-size:126%;
+    font-weight: bold;
+}
+
+a.navbar-brand small
+{
+    color:#fbfbfbfa;
+    font-size: 60%;
+    font-family:'Kaushan Script';
+}
+
+
+a.navbar-brand span img
+{
+    width: 9%;
+    margin-top: -1.5%;
+}

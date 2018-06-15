@@ -19,17 +19,14 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::resource('category','CategoryController');
+// Route::get('/viewusers', 'HomeController@index2');
 
-Route::get('profile', function(){
-    return view('profile');
-});
+Route::get('viewusers', 'UserController@index');
 
-/* View Composer*/
-View::composer(['*'], function($view){
-    
-    $user = Auth::user();
-    $view->with('user',$user);
-});
+Route::get('/viewusers/delete/{id}', 'UserController@delete');
 
-Route::get('/viewusers', 'HomeController@index2');
+Route::get('/viewusers/edit/{id}', 'UserController@showed');
+
+Route::post('/viewusers/edit/{id}', 'UserController@update');
+
+Route::get('viewusers/show/{id}', 'UserController@show');
