@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    ALT
+                    ALTs
                 </div>
 
                 <div class="links">
