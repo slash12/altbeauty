@@ -80,6 +80,7 @@
             <div class="content">
                 <div class="title m-b-md">
                     Nooree
+
                 </div>
 
                 <div class="links">
