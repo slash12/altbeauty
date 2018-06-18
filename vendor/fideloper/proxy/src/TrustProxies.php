@@ -159,7 +159,7 @@ class TrustProxies
     protected function getTrustedHeaderSet()
     {
         $trustedHeaderNames = $this->getTrustedHeaderNames();
-        $headerKeys = array_keys($this->getTrustedHeaderNames());
+        $headerKeys = array_keys((array)$this->getTrustedHeaderNames());
 
         return array_reduce($headerKeys, function ($set, $key) use ($trustedHeaderNames) {
             // PHP 7+ gives a warning if non-numeric value is used
