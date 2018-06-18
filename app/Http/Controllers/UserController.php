@@ -24,7 +24,7 @@ class UserController extends Controller
     {
         // $users= user::paginate(2);
         $users = DB::table('users')->get();
-        return view('viewuser')->with('users',$users);
+        return view('users.index')->with('users',$users);
     }
     /**
      * Show the form for creating a new resource.

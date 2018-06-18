@@ -11,22 +11,49 @@
 |
 */
 
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+// Auth::routes();
+
+// Route::get('/home', 'HomeController@index')->name('home');
+
+// Route::get('users', 'UserController@index');
+
+// Route::get('/viewusers/delete/{id}', 'UserController@delete');
+
+// Route::get('/users/edit/{id}', 'UserController@showed');
+
+// Route::post('/users/edit/{id}', 'UserController@update')->name('user.update');
+
+// Route::get('/users/show/{id}', 'UserController@show');
+
+
+
+
 Route::get('/', function () {
     return view('welcome');
 });
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index');
 
-// Route::get('/viewusers', 'HomeController@index2');
+Route::resource('users', 'UserController');
 
-Route::get('viewusers', 'UserController@index');
+Route::get('/users/delete/{id}', 'UserController@delete');
 
-Route::get('/viewusers/delete/{id}', 'UserController@delete');
+Route::get('/users/edit/{id}', 'UserController@showed');
 
-Route::get('/viewusers/edit/{id}', 'UserController@showed');
+Route::post('/users/edit/{id}', 'UserController@update');
 
-Route::post('/viewusers/edit/{id}', 'UserController@update');
+Route::get('search', 'EloquentController@index')->name('search');
 
-Route::get('viewusers/show/{id}', 'UserController@show');
+Route::get('search', 'UserController@index');
+
+Route::get('search/getdata', 'EloquentController@getdata')->name('search.getdata');
+
+Route::get('users/show/{id}', 'UserController@show');
+
+Route::get('/logout', 'UserController@logout');
