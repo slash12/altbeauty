@@ -79,9 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Jhanvi
-
-                     ALTsssszzszszszsz
+                    ALT
                 </div>
 
                 <div class="links">
