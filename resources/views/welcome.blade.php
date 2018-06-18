@@ -79,8 +79,8 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    ALTsssss
-                    ALTsss
+                    ALTssssszzzz
+
                 </div>
 
                 <div class="links">
